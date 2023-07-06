@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Leaderboard</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/33045cdb22.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Leaderboard Page</h1>
+	</header>
+	<div class="input-div">
+		<form autocomplete="on">
+			<input type="text" id="first-name" name="first-name" placeholder="First Name">
+			<input type="text" id="last-name" name="last-name" placeholder="Last Name">
+			<input type="text" id="country" name="country" placeholder="Country">
+			<input type="number" id="score" class="no-arrows" name="score" placeholder="Player Score">
+			<input type="submit" id="add-player" value="Add Player">
+		</form>
+		<h2 class="warning"></h2>
+	</div>
+	
+	<div class="players-log">
+		<div class="player-details">
+			<span class="name-date">
+				<span class="player-name">Martha Yohanes</span>
+				<span class="date-added"></span>
+			</span>
+			<span class="player-country">finland</span>
+			<span class="player-score">85</span>
+			<span class="inline-btn">
+				<div class="delete-btn sml-btn"><i class="fa-regular fa-trash-can"></i></div>
+				<div class="add-btn sml-btn">+5</div>
+				<div class="subtract-btn sml-btn">-5</div>
+			</span>
+		</div>
+		<div class="player-details">
+			<span class="name-date">
+				<span class="player-name">David Smith</span>
+				<span class="date-added"></span>
+			</span>
+			<span class="player-country">united kingdom</span>
+			<span class="player-score">80</span>
+			<span class="inline-btn">
+				<div class="delete-btn sml-btn"><i class="fa-regular fa-trash-can"></i></div>
+				<div class="add-btn sml-btn">+5</div>
+				<div class="subtract-btn sml-btn">-5</div>
+			</span>
+		</div>
+		<div class="player-details">
+			<span class="name-date">
+				<span class="player-name">Asabeneh Yetayeh</span>
+				<span class="date-added"></span>
+			</span>
+			<span class="player-country">finland</span>
+			<span class="player-score">75</span>
+			<span class="inline-btn">
+				<div class="delete-btn sml-btn"><i class="fa-regular fa-trash-can"></i></div>
+				<div class="add-btn sml-btn">+5</div>
+				<div class="subtract-btn sml-btn">-5</div>
+			</span>
+		</div>
+		<div class="player-details">
+			<span class="name-date">
+				<span class="player-name">Mathias Elias</span>
+				<span class="date-added"></span>
+			</span>
+			<span class="player-country">sweden</span>
+			<span class="player-score">70</span>
+			<span class="inline-btn">
+				<div class="delete-btn sml-btn"><i class="fa-regular fa-trash-can"></i></div>
+				<div class="add-btn sml-btn">+5</div>
+				<div class="subtract-btn sml-btn">-5</div>
+			</span>
+		</div>
+	</div>
+
+	<script src="./data/countries_data.js"></script>
+	<script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
