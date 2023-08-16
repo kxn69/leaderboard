@@ -1,7 +1,6 @@
-body {
+html {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    width: 75%;
     margin: auto;
 }
 
@@ -15,8 +14,13 @@ body {
     -moz-appearance: textfield;
 }
 
+.input-div {
+    margin-bottom: 10px;
+}
+
 input {
     font-size: 20px;
+    caret-color: rgb(233, 200, 156);
 }
 
 input:not(:last-of-type) {
@@ -41,14 +45,19 @@ input::placeholder {
 
 .warning {
     color: red;
+    font-size: 1rem;
+}
+
+.players-log {
+    display: grid;
+    justify-content: center;
+
 }
 
 .player-details {
-    /* border: 2px solid red; */
     margin: auto;
     margin-bottom: 10px;
     height: 4rem;
-    width: 62.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
